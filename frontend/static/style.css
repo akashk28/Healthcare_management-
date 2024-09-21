@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 33em;
+  width: 33rem;
+  margin: 10em 39rem;
+  border: 1px solid;
+}
+
+.content {
+  height: 25srem;
+  display: grid;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 38px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background: green;
+  margin-bottom: 15px;
+}
+
+input{
+    border-radius: 40px;
+    border: 1px solid;
+    margin: 4px 0px;
+    padding: 5px;
+}
+label {
+    font-size: 18px;
+}

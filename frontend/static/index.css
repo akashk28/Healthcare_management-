@@ -1,0 +1,39 @@
+#container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 33em;
+  width: 33rem;
+  margin: 10em 39rem;
+  border: 1px solid;
+}
+h3 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.link {
+  border: none;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 1em;
+  text-align: center;
+}
+.btn {
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-size: 14px;
+  background: green;
+  margin: 0px 20px;
+}
+
+.alink {
+  text-decoration: none;
+  color: white;
+
+}

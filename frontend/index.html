@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+
+    <title>Patient Management System</title>
+
+</head>
+<body>
+    <div id="container">
+        <h1 class="title">Patient Health Data Management System</h1>
+        <h3>Click below to add Patient Data</h3>
+        <a class="link" href="/add">Add Patient Data</a>
+        <ul>
+            {% for patient_id, patient in patients.items() %}
+                <li>
+                    <span style="font-size: 23px;">{{ patient.name }} </span>- <button class="btn"><a class="alink" href="/view/{{ patient_id }}">View</a></button> | <button class="btn"><a class="alink" href="/edit/{{ patient_id }}">Edit</a></button> | <button class="btn"><a class="alink" href="/delete/{{ patient_id }}">Delete</a></button>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
